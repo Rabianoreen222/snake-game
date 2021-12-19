@@ -1,26 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-<!-- FONT  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WDZLB4J");
+    </script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FONT  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funky Snake</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WDZLB4J"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <h1>Snake</h1>
     <h2 class="score">Score: <span id="score"></span></h2>
 
     <section id="start-menu">
-        <div class="start-menu">
-            <h2>Press the <u>Spacebar</u> <br>
-                to start</h2>
-        </div>
+      <div class="start-menu">
+        <h2>
+          Press the <u>Spacebar</u> <br />
+          to start
+        </h2>
+      </div>
     </section>
     <!-- <section id="pause">
 <div class="pause">
@@ -28,14 +57,13 @@
 </div>
     </section> -->
     <section id="game-over">
-        <div class="game-over">
-            <h2>GAME OVER</h2>
-            <p>Press the <u>spacebar</u> to restart</p>
-        </div>
+      <div class="game-over">
+        <h2>GAME OVER</h2>
+        <p>Press the <u>spacebar</u> to restart</p>
+      </div>
     </section>
-<canvas id="canvas" width="600" height="500" ></canvas>
+    <canvas id="canvas" width="600" height="500"></canvas>
 
-<script src="app.js"></script>
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
